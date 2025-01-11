@@ -1,0 +1,153 @@
+@font-face {
+    font-family: "IranSansRegular";
+    src: url("../fonts/IRANSansXFaNum-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "IranSansMedium";
+    src: url("../fonts/IRANSansXFaNum-Medium.woff2") format("woff2");
+}
+
+$font-iranSansRegular: IranSansRegular, Tahoma;
+$font-iranSansMedium: IranSansMedium, Tahoma;
+
+// colors
+
+$color-white: #FFF;
+$color-main-cyan: #0A97B3;
+$color-secondary-cyan: #00838F;
+$color-main-black: #212121;
+$color-dark-gray: #777;
+$color-light-gray: #999;
+$color-dark-red: #EA4336;
+$color-light-red: #E00;
+$color-very-dark-blue: #00439C;
+$color-dark-blue: #4363E3;
+$color-light-blue: #4285F4;
+$color-light-orange: #F3B500;
+$color-light-green: #97CB1D;
+
+.text-main-cyan {
+    color: $color-main-cyan !important;
+}
+
+.text-secondary-cyan {
+    color: $color-secondary-cyan !important;
+}
+
+.text-main-black {
+    color: $color-main-black !important;
+}
+
+.text-dark-gray {
+    color: $color-dark-gray !important;
+}
+
+.text-light-gray {
+    color: $color-light-gray !important;
+}
+
+.text-light-red {
+    color: $color-light-red !important;
+}
+
+.text-very-dark-blue {
+    color: $color-very-dark-blue !important;
+}
+
+.bg-main-cyan {
+    background-color: $color-main-cyan !important;
+}
+
+.bg-dark-gray {
+    background-color: $color-dark-gray !important;
+}
+
+.bg-dark-red {
+    background-color: $color-dark-red !important;
+}
+
+.bg-dark-blue {
+    background-color: $color-dark-blue !important;
+}
+
+.bg-light-blue {
+    background-color: $color-light-blue !important;
+}
+
+.bg-light-orange {
+    background-color: $color-light-orange !important;
+}
+
+.bg-light-green {
+    background-color: $color-light-green !important;
+}
+
+// bootstrap customized classes
+
+.container-custom {
+    max-width: 1108px !important;
+}
+
+.carousel {
+    &-indicators {
+        & [data-bs-target] {
+            width: 18px;
+            height: 18px;
+            margin: 0 0 0 5px;
+            text-indent: 0;
+            border: none;
+            border-radius: 3px;
+            color: $color-white;
+            background-color: #90A4AE;
+            opacity: 1;
+        }
+
+        & .active {
+            background-color: $color-main-cyan;
+        }
+    }
+
+    &-control-prev,
+    &-control-next {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+
+        &-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: none;
+        }
+    }
+
+    &-control-prev {
+        border-radius: 3px 0 0 3px;
+    }
+
+    &-control-next {
+        border-radius: 0 3px 3px 0;
+    }
+}
+
+.fade:not(.show) {
+    display: none;
+}
+
+// general styles
+
+* {
+    font-family: $font-iranSansRegular;
+}
+
+html,
+body {
+    font-size: 14px;
+    font-kerning: none;
+}
+
+a {
+    color: $color-main-black !important;
+    text-decoration: none;
+}
